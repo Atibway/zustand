@@ -8,7 +8,7 @@ import Link from "next/link";
 import { useState } from "react";
 
 const Example1 = () => {
-    const [newBearCount, setNwBearCount] = useState<number>(20)
+    const [newBearCount] = useState<number>(20)
     const {count, increase, removeAllCount, updateCount, decrease}: storeProps = useStore()
     
   return (
