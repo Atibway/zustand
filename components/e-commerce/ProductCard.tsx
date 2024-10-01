@@ -12,7 +12,11 @@ export const ProductCard = ({
 }: ProductProps) => {
   const cart = useCart()
   return (
-    <Card key={item.id}>
+    <div
+    key={item.id}
+    >
+
+    <Card >
                   <CardHeader>
                   <div className="relative ">
                   <Image
@@ -35,5 +39,6 @@ export const ProductCard = ({
                     className="w-full">Add to Cart</Button>
                   </CardFooter>
                 </Card>
+    </div>
   )
 }
