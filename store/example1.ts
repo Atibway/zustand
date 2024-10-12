@@ -15,3 +15,11 @@ export const useStore = create<storeProps>((set)=> ({
     removeAllCount: () => set({count: 0}),
     updateCount: (newCount: number) => set({count: newCount})
 }))
+
+export const useStores = create<storeProps>((set)=> ({
+    count: 0,
+    increase: ()=> set((state)=> ({count: state.count + 1})),
+    decrease: ()=> set((state)=> ({count: state.count - 1})),
+    removeAllCount: () => set({count: 0}),
+    updateCount: (newCount: number) => set({count: newCount})
+}))
